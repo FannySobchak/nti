@@ -27,6 +27,7 @@ class ComposerStaticInit7aced5aacc16a2549c5ff01371e352a1
             'Symfony\\Polyfill\\Php70\\' => 23,
             'Symfony\\Polyfill\\Php56\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\Security\\Acl\\' => 31,
             'Symfony\\Component\\' => 18,
             'Symfony\\Bundle\\SwiftmailerBundle\\' => 33,
             'Symfony\\Bundle\\MonologBundle\\' => 29,
@@ -40,6 +41,10 @@ class ComposerStaticInit7aced5aacc16a2549c5ff01371e352a1
             'Sensio\\Bundle\\GeneratorBundle\\' => 30,
             'Sensio\\Bundle\\FrameworkExtraBundle\\' => 35,
             'Sensio\\Bundle\\DistributionBundle\\' => 33,
+        ),
+        'P' => 
+        array (
+            'Propel\\Bundle\\PropelBundle\\' => 27,
         ),
         'M' => 
         array (
@@ -79,6 +84,10 @@ class ComposerStaticInit7aced5aacc16a2549c5ff01371e352a1
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\Security\\Acl\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/security-acl',
         ),
         'Symfony\\Component\\' => 
         array (
@@ -131,6 +140,10 @@ class ComposerStaticInit7aced5aacc16a2549c5ff01371e352a1
         'Sensio\\Bundle\\DistributionBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/sensio/distribution-bundle',
+        ),
+        'Propel\\Bundle\\PropelBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/propel/propel-bundle',
         ),
         'Monolog\\' => 
         array (
@@ -186,6 +199,10 @@ class ComposerStaticInit7aced5aacc16a2549c5ff01371e352a1
             'Psr\\Log\\' => 
             array (
                 0 => __DIR__ . '/..' . '/psr/log',
+            ),
+            'Propel' => 
+            array (
+                0 => __DIR__ . '/..' . '/propel/propel/src',
             ),
         ),
         'D' => 

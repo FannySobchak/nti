@@ -165,7 +165,7 @@ class UserTableMap extends TableMap
         $this->addColumn('nom', 'Nom', 'CHAR', false, 25, null);
         $this->addColumn('prenom', 'Prenom', 'CHAR', true, 25, null);
         $this->addColumn('email', 'Email', 'VARCHAR', true, 80, null);
-        $this->addColumn('mdp', 'Mdp', 'VARCHAR', true, 25, null);
+        $this->addColumn('mdp', 'Mdp', 'VARCHAR', true, 40, null);
         $this->addColumn('tel', 'Tel', 'VARCHAR', false, 25, null);
         $this->addColumn('droit', 'Droit', 'INTEGER', true, null, null);
         $this->addColumn('photo', 'Photo', 'VARCHAR', false, 25, null);

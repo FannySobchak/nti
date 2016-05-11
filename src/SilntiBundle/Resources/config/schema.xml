@@ -154,7 +154,7 @@
     <column name="nom" phpName="Nom" type="CHAR" size="25"/>
     <column name="prenom" phpName="Prenom" type="CHAR" size="25" required="true"/>
     <column name="email" phpName="Email" type="VARCHAR" size="80" required="true"/>
-    <column name="mdp" phpName="Mdp" type="VARCHAR" size="25" required="true"/>
+    <column name="mdp" phpName="Mdp" type="VARCHAR" size="40" required="true"/>
     <column name="tel" phpName="Tel" type="VARCHAR" size="25"/>
     <column name="droit" phpName="Droit" type="INTEGER" required="true"/>
     <column name="photo" phpName="Photo" type="VARCHAR" size="25"/>

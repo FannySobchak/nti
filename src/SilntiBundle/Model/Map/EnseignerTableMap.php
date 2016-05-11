@@ -34,7 +34,7 @@ class EnseignerTableMap extends TableMap
     /**
      * The (dot-path) name of this class
      */
-    const CLASS_NAME = 'src\SilntiBundle.Model.Map.EnseignerTableMap';
+    const CLASS_NAME = 'src.SilntiBundle.Model.Map.EnseignerTableMap';
 
     /**
      * The default database name for this class
@@ -54,7 +54,7 @@ class EnseignerTableMap extends TableMap
     /**
      * A class that can be returned by this tableMap
      */
-    const CLASS_DEFAULT = 'src\SilntiBundle.Model.Enseigner';
+    const CLASS_DEFAULT = 'src.SilntiBundle.Model.Enseigner';
 
     /**
      * The total number of columns
@@ -128,7 +128,7 @@ class EnseignerTableMap extends TableMap
         $this->setPhpName('Enseigner');
         $this->setIdentifierQuoting(false);
         $this->setClassName('\\SilntiBundle\\Model\\Enseigner');
-        $this->setPackage('src\SilntiBundle.Model');
+        $this->setPackage('src.SilntiBundle.Model');
         $this->setUseIdGenerator(false);
         // columns
         $this->addForeignPrimaryKey('id_user', 'IdUser', 'INTEGER' , 'user', 'id_user', true, null, null);

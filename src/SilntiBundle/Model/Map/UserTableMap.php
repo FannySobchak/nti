@@ -34,7 +34,7 @@ class UserTableMap extends TableMap
     /**
      * The (dot-path) name of this class
      */
-    const CLASS_NAME = 'src\SilntiBundle.Model.Map.UserTableMap';
+    const CLASS_NAME = 'src.SilntiBundle.Model.Map.UserTableMap';
 
     /**
      * The default database name for this class
@@ -54,7 +54,7 @@ class UserTableMap extends TableMap
     /**
      * A class that can be returned by this tableMap
      */
-    const CLASS_DEFAULT = 'src\SilntiBundle.Model.User';
+    const CLASS_DEFAULT = 'src.SilntiBundle.Model.User';
 
     /**
      * The total number of columns
@@ -158,7 +158,7 @@ class UserTableMap extends TableMap
         $this->setPhpName('User');
         $this->setIdentifierQuoting(false);
         $this->setClassName('\\SilntiBundle\\Model\\User');
-        $this->setPackage('src\SilntiBundle.Model');
+        $this->setPackage('src.SilntiBundle.Model');
         $this->setUseIdGenerator(true);
         // columns
         $this->addPrimaryKey('id_user', 'IdUser', 'INTEGER', true, null, null);

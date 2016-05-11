@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<database namespace="SilntiBundle\Model" name="default" defaultIdMethod="native" defaultPhpNamingMethod="underscore" package="src\SilntiBundle.Model">
-  <table name="actualite" idMethod="native" phpName="Actualite" package="src\SilntiBundle.Model">
+<database namespace="SilntiBundle\Model" name="default" defaultIdMethod="native" defaultPhpNamingMethod="underscore" package="src.SilntiBundle.Model">
+  <table name="actualite" idMethod="native" phpName="Actualite" package="src.SilntiBundle.Model">
     <column name="id_actu" phpName="IdActu" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
     <column name="contenu" phpName="Contenu" type="VARCHAR" size="500"/>
     <column name="date_actu" phpName="DateActu" type="DATE" required="true"/>
@@ -15,14 +15,14 @@
       <parameter name="Engine" value="InnoDB"/>
     </vendor>
   </table>
-  <table name="cours" idMethod="native" phpName="Cours" package="src\SilntiBundle.Model">
+  <table name="cours" idMethod="native" phpName="Cours" package="src.SilntiBundle.Model">
     <column name="id_cours" phpName="IdCours" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
     <column name="libelle" phpName="Libelle" type="VARCHAR" size="25" required="true"/>
     <vendor type="mysql">
       <parameter name="Engine" value="InnoDB"/>
     </vendor>
   </table>
-  <table name="enseigner" idMethod="native" phpName="Enseigner" package="src\SilntiBundle.Model">
+  <table name="enseigner" idMethod="native" phpName="Enseigner" package="src.SilntiBundle.Model">
     <column name="id_user" phpName="IdUser" type="INTEGER" primaryKey="true" required="true"/>
     <column name="id_cours" phpName="IdCours" type="INTEGER" primaryKey="true" required="true"/>
     <foreign-key foreignTable="cours" name="FK_enseigner_id_cours">
@@ -38,7 +38,7 @@
       <parameter name="Engine" value="InnoDB"/>
     </vendor>
   </table>
-  <table name="epreuve" idMethod="native" phpName="Epreuve" package="src\SilntiBundle.Model">
+  <table name="epreuve" idMethod="native" phpName="Epreuve" package="src.SilntiBundle.Model">
     <column name="id_epreuve" phpName="IdEpreuve" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
     <column name="dateEpreuve" phpName="Dateepreuve" type="DATE" required="true"/>
     <column name="intitule" phpName="Intitule" type="VARCHAR" size="25"/>
@@ -53,7 +53,7 @@
       <parameter name="Engine" value="InnoDB"/>
     </vendor>
   </table>
-  <table name="etudiant" idMethod="native" phpName="Etudiant" package="src\SilntiBundle.Model">
+  <table name="etudiant" idMethod="native" phpName="Etudiant" package="src.SilntiBundle.Model">
     <column name="id_user" phpName="IdUser" type="INTEGER" primaryKey="true" required="true"/>
     <column name="id_session" phpName="IdSession" type="INTEGER" required="true"/>
     <foreign-key foreignTable="session" name="FK_etudiant_id_session">
@@ -69,7 +69,7 @@
       <parameter name="Engine" value="InnoDB"/>
     </vendor>
   </table>
-  <table name="fichier" idMethod="native" phpName="Fichier" package="src\SilntiBundle.Model">
+  <table name="fichier" idMethod="native" phpName="Fichier" package="src.SilntiBundle.Model">
     <column name="id_fichier" phpName="IdFichier" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
     <column name="chemin" phpName="Chemin" type="VARCHAR" size="25" required="true"/>
     <column name="id_user" phpName="IdUser" type="INTEGER" required="true"/>
@@ -90,7 +90,7 @@
       <parameter name="Engine" value="InnoDB"/>
     </vendor>
   </table>
-  <table name="note" idMethod="native" phpName="Note" package="src\SilntiBundle.Model">
+  <table name="note" idMethod="native" phpName="Note" package="src.SilntiBundle.Model">
     <column name="id_note" phpName="IdNote" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
     <column name="note" phpName="Note" type="FLOAT" required="true"/>
     <column name="id_epreuve" phpName="IdEpreuve" type="INTEGER" required="true"/>
@@ -118,7 +118,7 @@
       <parameter name="Engine" value="InnoDB"/>
     </vendor>
   </table>
-  <table name="page" idMethod="native" phpName="Page" package="src\SilntiBundle.Model">
+  <table name="page" idMethod="native" phpName="Page" package="src.SilntiBundle.Model">
     <column name="id_page" phpName="IdPage" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
     <column name="titre_page" phpName="TitrePage" type="VARCHAR" size="25" required="true"/>
     <column name="id_user" phpName="IdUser" type="INTEGER" required="true"/>
@@ -132,7 +132,7 @@
       <parameter name="Engine" value="InnoDB"/>
     </vendor>
   </table>
-  <table name="prof" idMethod="native" phpName="Prof" package="src\SilntiBundle.Model">
+  <table name="prof" idMethod="native" phpName="Prof" package="src.SilntiBundle.Model">
     <column name="id_user" phpName="IdUser" type="INTEGER" primaryKey="true" required="true"/>
     <foreign-key foreignTable="user" name="FK_prof_id_user">
       <reference local="id_user" foreign="id_user"/>
@@ -141,7 +141,7 @@
       <parameter name="Engine" value="InnoDB"/>
     </vendor>
   </table>
-  <table name="session" idMethod="native" phpName="Session" package="src\SilntiBundle.Model">
+  <table name="session" idMethod="native" phpName="Session" package="src.SilntiBundle.Model">
     <column name="id_session" phpName="IdSession" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
     <column name="libelle" phpName="Libelle" type="VARCHAR" size="25" required="true"/>
     <column name="date_inscription" phpName="DateInscription" type="DATE" required="true"/>
@@ -149,7 +149,7 @@
       <parameter name="Engine" value="InnoDB"/>
     </vendor>
   </table>
-  <table name="user" idMethod="native" phpName="User" package="src\SilntiBundle.Model">
+  <table name="user" idMethod="native" phpName="User" package="src.SilntiBundle.Model">
     <column name="id_user" phpName="IdUser" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
     <column name="nom" phpName="Nom" type="CHAR" size="25"/>
     <column name="prenom" phpName="Prenom" type="CHAR" size="25" required="true"/>

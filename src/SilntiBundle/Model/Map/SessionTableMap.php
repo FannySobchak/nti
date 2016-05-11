@@ -34,7 +34,7 @@ class SessionTableMap extends TableMap
     /**
      * The (dot-path) name of this class
      */
-    const CLASS_NAME = 'src\SilntiBundle.Model.Map.SessionTableMap';
+    const CLASS_NAME = 'src.SilntiBundle.Model.Map.SessionTableMap';
 
     /**
      * The default database name for this class
@@ -54,7 +54,7 @@ class SessionTableMap extends TableMap
     /**
      * A class that can be returned by this tableMap
      */
-    const CLASS_DEFAULT = 'src\SilntiBundle.Model.Session';
+    const CLASS_DEFAULT = 'src.SilntiBundle.Model.Session';
 
     /**
      * The total number of columns
@@ -133,7 +133,7 @@ class SessionTableMap extends TableMap
         $this->setPhpName('Session');
         $this->setIdentifierQuoting(false);
         $this->setClassName('\\SilntiBundle\\Model\\Session');
-        $this->setPackage('src\SilntiBundle.Model');
+        $this->setPackage('src.SilntiBundle.Model');
         $this->setUseIdGenerator(true);
         // columns
         $this->addPrimaryKey('id_session', 'IdSession', 'INTEGER', true, null, null);

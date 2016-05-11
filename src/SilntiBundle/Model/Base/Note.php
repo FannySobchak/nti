@@ -29,7 +29,7 @@ use SilntiBundle\Model\Map\NoteTableMap;
  *
  *
  *
-* @package    propel.generator.src\SilntiBundle.Model.Base
+* @package    propel.generator.src.SilntiBundle.Model.Base
 */
 abstract class Note implements ActiveRecordInterface
 {

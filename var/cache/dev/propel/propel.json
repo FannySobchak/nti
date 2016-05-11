@@ -18,7 +18,9 @@
                         "src",
                         "vendor"
                     ],
-                    "slaves": []
+                    "slaves": [
+
+                    ]
                 }
             },
             "adapters": {
@@ -26,7 +28,9 @@
                     "tableType": "InnoDB",
                     "tableEngineKeyword": "ENGINE"
                 },
-                "sqlite": [],
+                "sqlite": [
+
+                ],
                 "oracle": {
                     "autoincrementSequencePattern": "${table}_SEQ"
                 }
@@ -37,7 +41,9 @@
             "connections": [
                 "default"
             ],
-            "log": []
+            "log": [
+
+            ]
         },
         "generator": {
             "defaultConnection": "default",
@@ -89,15 +95,17 @@
             "project": "",
             "version": "2.0.0-dev"
         },
-        "exclude_tables": [],
+        "exclude_tables": [
+
+        ],
         "paths": {
-            "projectDir": "C:\\xampp\\htdocs\\siteSilNti",
-            "schemaDir": "C:\\xampp\\htdocs\\siteSilNti",
-            "outputDir": "C:\\xampp\\htdocs\\siteSilNti",
-            "phpDir": "C:\\xampp\\htdocs\\siteSilNti\/generated-classes",
-            "phpConfDir": "C:\\xampp\\htdocs\\siteSilNti\/generated-conf",
-            "sqlDir": "C:\\xampp\\htdocs\\siteSilNti\/generated-sql",
-            "migrationDir": "C:\\xampp\\htdocs\\siteSilNti\/generated-migrations",
+            "projectDir": "\/home\/alain\/public_html\/nti",
+            "schemaDir": "\/home\/alain\/public_html\/nti",
+            "outputDir": "\/home\/alain\/public_html\/nti",
+            "phpDir": "\/home\/alain\/public_html\/nti\/generated-classes",
+            "phpConfDir": "\/home\/alain\/public_html\/nti\/generated-conf",
+            "sqlDir": "\/home\/alain\/public_html\/nti\/generated-sql",
+            "migrationDir": "\/home\/alain\/public_html\/nti\/generated-migrations",
             "composerDir": null
         },
         "migrations": {

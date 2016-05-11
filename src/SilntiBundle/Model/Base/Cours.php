@@ -34,7 +34,7 @@ use SilntiBundle\Model\Map\FichierTableMap;
  *
  *
  *
-* @package    propel.generator.src\SilntiBundle.Model.Base
+* @package    propel.generator.src.SilntiBundle.Model.Base
 */
 abstract class Cours implements ActiveRecordInterface
 {

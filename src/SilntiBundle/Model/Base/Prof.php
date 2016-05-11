@@ -25,7 +25,7 @@ use SilntiBundle\Model\Map\ProfTableMap;
  *
  *
  *
-* @package    propel.generator.src\SilntiBundle.Model.Base
+* @package    propel.generator.src.SilntiBundle.Model.Base
 */
 abstract class Prof implements ActiveRecordInterface
 {

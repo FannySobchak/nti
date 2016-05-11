@@ -34,7 +34,7 @@ class ProfTableMap extends TableMap
     /**
      * The (dot-path) name of this class
      */
-    const CLASS_NAME = 'src\SilntiBundle.Model.Map.ProfTableMap';
+    const CLASS_NAME = 'src.SilntiBundle.Model.Map.ProfTableMap';
 
     /**
      * The default database name for this class
@@ -54,7 +54,7 @@ class ProfTableMap extends TableMap
     /**
      * A class that can be returned by this tableMap
      */
-    const CLASS_DEFAULT = 'src\SilntiBundle.Model.Prof';
+    const CLASS_DEFAULT = 'src.SilntiBundle.Model.Prof';
 
     /**
      * The total number of columns
@@ -123,7 +123,7 @@ class ProfTableMap extends TableMap
         $this->setPhpName('Prof');
         $this->setIdentifierQuoting(false);
         $this->setClassName('\\SilntiBundle\\Model\\Prof');
-        $this->setPackage('src\SilntiBundle.Model');
+        $this->setPackage('src.SilntiBundle.Model');
         $this->setUseIdGenerator(false);
         // columns
         $this->addForeignPrimaryKey('id_user', 'IdUser', 'INTEGER' , 'user', 'id_user', true, null, null);

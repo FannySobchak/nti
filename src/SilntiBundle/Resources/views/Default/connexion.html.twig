@@ -3,9 +3,7 @@
 {% block title %}Connexion{% endblock %}
 
 {% block body %}
-<form method="post" action="{{ path('_connexion') }}" >
-    <label>Nom d'utilisateur : <input type="text" name="username" /></label><br />
-    <label>Mot de passe : <input type="password" name="password" /></label><br />
-    <input type="submit" value="Connexion" />
-</form>
+{{ form_start(form_connexion) }}
+    {{ form_widget(form_connexion) }}
+{{ form_end(form_connexion) }}
 {% endblock %}

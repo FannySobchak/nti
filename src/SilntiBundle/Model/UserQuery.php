@@ -18,6 +18,7 @@ class UserQuery extends BaseUserQuery
 {
     public static function getUserByCredentials($email, $password) {
         $user = UserQuery::create()->findOneByEmail($email);
+        if($user == null) return null;
         if($user->getMdp() == sha1($password)) return $user;
         else return null;
     }

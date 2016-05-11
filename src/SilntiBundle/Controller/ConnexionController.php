@@ -18,6 +18,13 @@ class ConnexionController extends Controller
 	 */
 	public function connexionAction(Request $request)
     {
+        $session = $request->getSession();
+
+        if(!empty($session->get('email'))) {
+            $session->getFlashBag()->add('error', 'Vous êtes déjà connecté.');
+            return $this->redirectToRoute('_index');
+        }
+
         $form = $this->createFormBuilder(null)->add('email', TextType::class, array('label' => 'Adresse e-mail'))
                                               ->add('password', PasswordType::class, array('label' => 'Mot de passe'))
                                               ->add('login', SubmitType::class, array('label' => 'Connexion'))
@@ -27,11 +34,14 @@ class ConnexionController extends Controller
         if($form->isSubmitted() && $form->isValid()) {
             $user = UserQuery::getUserByCredentials($form->getData()['email'], $form->getData()['password']);
             if($user != null) {
-                $session = $request->getSession();
+
                 $session->set('email', $user->getEmail());
+                $session->getFlashBag()->add('notice', 'Vous êtes maintenant connecté.');
                 return $this->redirectToRoute('_index');
             }
-            //if($user != null) return $this->redirectToRoute('_index');
+            else {
+                $session->getFlashBag()->add('error', 'Identifiants incorrects.');
+            }
         }
 
 		$html = $this->container->get('templating')->render('SilntiBundle::Connexion/connexion.html.twig',

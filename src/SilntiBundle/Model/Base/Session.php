@@ -33,7 +33,7 @@ use SilntiBundle\Model\Map\SessionTableMap;
  *
  *
  *
-* @package    propel.generator.src\SilntiBundle.Model.Base
+* @package    propel.generator.src.SilntiBundle.Model.Base
 */
 abstract class Session implements ActiveRecordInterface
 {

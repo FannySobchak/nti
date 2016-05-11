@@ -27,7 +27,7 @@ use SilntiBundle\Model\Map\EtudiantTableMap;
  *
  *
  *
-* @package    propel.generator.src\SilntiBundle.Model.Base
+* @package    propel.generator.src.SilntiBundle.Model.Base
 */
 abstract class Etudiant implements ActiveRecordInterface
 {

@@ -1,0 +1,9 @@
+{% extends "@sil/base.html.twig" %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+{{ form_start(form_connexion) }}
+    {{ form_widget(form_connexion) }}
+{{ form_end(form_connexion) }}
+{% endblock %}

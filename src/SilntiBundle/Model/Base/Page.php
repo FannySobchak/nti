@@ -25,7 +25,7 @@ use SilntiBundle\Model\Map\PageTableMap;
  *
  *
  *
-* @package    propel.generator.src\SilntiBundle.Model.Base
+* @package    propel.generator.src.SilntiBundle.Model.Base
 */
 abstract class Page implements ActiveRecordInterface
 {

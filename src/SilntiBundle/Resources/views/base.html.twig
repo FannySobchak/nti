@@ -20,7 +20,17 @@
         </div>
 
         <div class="row">
-            
+            {% if app.session.get('email') is not empty %}
+                <div style="color:red;" >
+                    Connecté en tant que {{ app.session.get('email') }}
+                </div>
+            {% endif %}
+
+            {% for flashMessage in app.session.flashbag.get('error') %}
+                <div>
+                    {{ flashMessage }}
+                </div>
+            {% endfor %}
         </div>
 
         <hr>

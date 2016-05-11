@@ -44,7 +44,7 @@ use SilntiBundle\Model\Map\UserTableMap;
  *
  *
  *
-* @package    propel.generator.src\SilntiBundle.Model.Base
+* @package    propel.generator.src.SilntiBundle.Model.Base
 */
 abstract class User implements ActiveRecordInterface
 {

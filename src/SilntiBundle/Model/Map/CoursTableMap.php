@@ -34,7 +34,7 @@ class CoursTableMap extends TableMap
     /**
      * The (dot-path) name of this class
      */
-    const CLASS_NAME = 'src\SilntiBundle.Model.Map.CoursTableMap';
+    const CLASS_NAME = 'src.SilntiBundle.Model.Map.CoursTableMap';
 
     /**
      * The default database name for this class
@@ -54,7 +54,7 @@ class CoursTableMap extends TableMap
     /**
      * A class that can be returned by this tableMap
      */
-    const CLASS_DEFAULT = 'src\SilntiBundle.Model.Cours';
+    const CLASS_DEFAULT = 'src.SilntiBundle.Model.Cours';
 
     /**
      * The total number of columns
@@ -128,7 +128,7 @@ class CoursTableMap extends TableMap
         $this->setPhpName('Cours');
         $this->setIdentifierQuoting(false);
         $this->setClassName('\\SilntiBundle\\Model\\Cours');
-        $this->setPackage('src\SilntiBundle.Model');
+        $this->setPackage('src.SilntiBundle.Model');
         $this->setUseIdGenerator(true);
         // columns
         $this->addPrimaryKey('id_cours', 'IdCours', 'INTEGER', true, null, null);

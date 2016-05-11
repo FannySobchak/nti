@@ -27,7 +27,7 @@ use SilntiBundle\Model\Map\ActualiteTableMap;
  *
  *
  *
-* @package    propel.generator.src\SilntiBundle.Model.Base
+* @package    propel.generator.src.SilntiBundle.Model.Base
 */
 abstract class Actualite implements ActiveRecordInterface
 {

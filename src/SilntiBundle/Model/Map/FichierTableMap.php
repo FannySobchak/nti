@@ -34,7 +34,7 @@ class FichierTableMap extends TableMap
     /**
      * The (dot-path) name of this class
      */
-    const CLASS_NAME = 'src\SilntiBundle.Model.Map.FichierTableMap';
+    const CLASS_NAME = 'src.SilntiBundle.Model.Map.FichierTableMap';
 
     /**
      * The default database name for this class
@@ -54,7 +54,7 @@ class FichierTableMap extends TableMap
     /**
      * A class that can be returned by this tableMap
      */
-    const CLASS_DEFAULT = 'src\SilntiBundle.Model.Fichier';
+    const CLASS_DEFAULT = 'src.SilntiBundle.Model.Fichier';
 
     /**
      * The total number of columns
@@ -138,7 +138,7 @@ class FichierTableMap extends TableMap
         $this->setPhpName('Fichier');
         $this->setIdentifierQuoting(false);
         $this->setClassName('\\SilntiBundle\\Model\\Fichier');
-        $this->setPackage('src\SilntiBundle.Model');
+        $this->setPackage('src.SilntiBundle.Model');
         $this->setUseIdGenerator(true);
         // columns
         $this->addPrimaryKey('id_fichier', 'IdFichier', 'INTEGER', true, null, null);

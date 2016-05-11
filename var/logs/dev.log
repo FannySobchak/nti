@@ -14,3 +14,6 @@
 [2016-05-11 11:18:19] php.DEBUG: fsockopen(): unable to connect to 127.0.0.1:8000 (Connection refused) {"type":2,"file":"/home/alain/public_html/nti/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Command/ServerCommand.php","line":59,"level":28928} []
 [2016-05-11 11:18:20] request.INFO: Matched route "silnti_default_index". {"route_parameters":{"_controller":"SilntiBundle\\Controller\\DefaultController::indexAction","_route":"silnti_default_index"},"request_uri":"http://localhost:8000/"} []
 [2016-05-11 11:18:21] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2016-05-11 11:43:17] php.DEBUG: fsockopen(): unable to connect to 127.0.0.1:8000 (Connection refused) {"type":2,"file":"/home/alain/public_html/nti/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Command/ServerCommand.php","line":59,"level":28928} []
+[2016-05-11 11:43:22] request.INFO: Matched route "silnti_default_index". {"route_parameters":{"_controller":"SilntiBundle\\Controller\\DefaultController::indexAction","_route":"silnti_default_index"},"request_uri":"http://localhost:8000/"} []
+[2016-05-11 11:43:22] security.INFO: Populated the TokenStorage with an anonymous Token. [] []

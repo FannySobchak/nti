@@ -7,6 +7,10 @@ _connexion:
     path: /connexion
     defaults: { _controller: SilntiBundle:Connexion:connexion }
 
+_deconnexion:
+    path: /deconnexion
+    defaults: { _controller: SilntiBundle:Connexion:deconnexion }
+
 _index:
     path: /
     defaults: { _controller: SilntiBundle:Default:index }

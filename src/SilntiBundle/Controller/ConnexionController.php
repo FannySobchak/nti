@@ -9,6 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 class ConnexionController extends Controller
 {
@@ -24,12 +25,22 @@ class ConnexionController extends Controller
 
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid()) {
-            var_dump(UserQuery::getUserByCredentials($form->getData()['email'], $form->getData()['password']));
-            //return $this->redirectToRoute('_index');
+            $user = UserQuery::getUserByCredentials($form->getData()['email'], $form->getData()['password']);
+            if($user != null) {
+                $session = $request->getSession();
+                $session->set('email', $user->getEmail());
+                return $this->redirectToRoute('_index');
+            }
+            //if($user != null) return $this->redirectToRoute('_index');
         }
 
-		$html = $this->container->get('templating')->render('SilntiBundle::Default/connexion.html.twig',
+		$html = $this->container->get('templating')->render('SilntiBundle::Connexion/connexion.html.twig',
 			array('form_connexion' => $form->createView()));
 		return new Response($html);
 	}
+
+    public function deconnexionAction(Request $request) {
+        $request->getSession()->clear();
+        return $this->redirectToRoute('_index');
+    }
 }

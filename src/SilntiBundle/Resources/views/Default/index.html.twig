@@ -1,2 +1,8 @@
-Hello World!
-test
+{% extends "SilntiBundle::base.html.twig" %}
+
+{% block title %}
+    Accueil - {{ parent() }}
+{% endblock %}
+{% block content %}
+    toto
+{% endblock %}

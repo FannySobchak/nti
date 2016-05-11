@@ -1,0 +1,3 @@
+accueil:
+        path:    /accueil
+        defaults: { _controller: SilntiBundle:Default:index }

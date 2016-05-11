@@ -6,3 +6,6 @@ silnti:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+site:
+    resource: "@SilntiBundle/Resources/config/routing.yml"
+    prefix:    /

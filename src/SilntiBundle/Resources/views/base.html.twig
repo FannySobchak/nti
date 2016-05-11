@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css">
+
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+    <div class="container">
+        <div id="header" class="jumbotron">
+            <img src="{{ asset('bundles/framework/images/image.png') }}">;
+            <h1>Bienvenue sur le site de la Licence Professionnelle SIL-NTI</h1>
+
+        </div>
+
+        <div class="row">
+            
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>  SIL - NTI copyright 2016</p>
+        </footer>
+    </div>
+
+
+    <!--<ul>
+        <li>Accueil</li>
+        <li>Contact</li>
+    </ul>
+    <div id="content">{% block content %}{% endblock %}
+
+    </div>
+    -->
+{% endblock %}
+{% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.dropdown.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.dropdownMenu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.responsiveMenu.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+{% endblock %}
+</body>
+</html>

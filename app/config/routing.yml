@@ -3,6 +3,10 @@ silnti:
     type:     annotation
     prefix:   /
 
+_connexion:
+    path: /connexion
+    defaults: { _controller: SilntiBundle:Connexion:connexion }
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

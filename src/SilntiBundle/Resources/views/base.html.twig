@@ -14,7 +14,6 @@
     {% endblock %}
 </head>
 <body>
-{% block body %}
     <div class="container">
         
         <div id="header" class="jumbotron">
@@ -68,6 +67,11 @@
             {% endfor %}
         </div>
 
+<div id="body" >
+{% block body %}
+{% endblock %}
+</div>
+
         <hr>
 
         <footer>
@@ -84,7 +88,6 @@
 
     </div>
     -->
-{% endblock %}
 {% block javascripts %}
    
 {% endblock %}

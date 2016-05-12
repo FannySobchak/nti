@@ -44,7 +44,12 @@
 							</ul>
 						</li>
 						<li><a href="#">Contact</a></li>
-						<li><a href="#">Connexion</a></li>
+						{% if app.session.get('email') is empty %}
+							<li><a href="{{ path('_connexion') }}">Connexion</a></li>
+						{% else %}
+							<li><a href="#" >{{ app.session.get('email') }}</a></li>
+							<li><a href="{{ path('_deconnexion') }}" >Déconnexion</a></li>
+						{% endif %}
 					</ul>
 				</div>
         	</div>
@@ -54,16 +59,12 @@
 
 
         <div class="row">
-            {% if app.session.get('email') is not empty %}
-                <div style="color:red;" >
-                    Connecté en tant que {{ app.session.get('email') }}
-                </div>
-            {% endif %}
-
-            {% for flashMessage in app.session.flashbag.get('error') %}
-                <div>
-                    {{ flashMessage }}
-                </div>
+            {% for label,flashes in app.session.flashbag.all %}
+				{% for flash in flashes %}
+					<div>
+						{{ flash }}
+					</div>
+				{% endfor %}
             {% endfor %}
         </div>
 

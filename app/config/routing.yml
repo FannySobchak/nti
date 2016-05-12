@@ -22,6 +22,10 @@ _index:
     path: /
     defaults: { _controller: SilntiBundle:Default:index }
 
+_gestionFichier:
+    path: /gestionFichier
+    defaults: { _controller: SilntiBundle:GestionFichier:gestionFichier }
+
 #app:
 #    resource: "@AppBundle/Controller/"
 #    type:     annotation

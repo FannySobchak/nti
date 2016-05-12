@@ -5,13 +5,13 @@ namespace SilntiBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
-class DefaultController extends Controller
+class GestionFichierController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/gestionFichier")
      */
-    public function indexAction()
+    public function gestionFichierAction()
     {
-        return $this->render('SilntiBundle:Default:index.html.twig');
+        return $this->render('SilntiBundle:GestionFichier:gestionFichier.html.twig');
     }
 }

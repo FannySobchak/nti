@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <title>{% block title %}Welcome!{% endblock %}</title>
+    
     {% block stylesheets %}
 
-		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css">
 
     {% endblock %}
+
 </head>
 <body>
     <div class="container">
@@ -56,8 +56,6 @@
         </nav>
 
 
-
-
         <div class="row">
             {% for label,flashes in app.session.flashbag.all %}
 				{% for flash in flashes %}
@@ -68,15 +66,16 @@
             {% endfor %}
         </div>
 
-<div id="body" >
-{% block body %}
-{% endblock %}
-</div>
+		<div id="body" >
+			{% block body %}
+			{% endblock %}
+		</div>
 
         <hr>
 
         <footer>
-            <p>  SIL - NTI copyright 2016</p>
+        	<!-- recupere l'année courante -->
+            <p>  SIL - NTI copyright {{ "now"|date('Y') }} </p> 
         </footer>
     </div>
 
@@ -90,7 +89,9 @@
     </div>
     -->
 {% block javascripts %}
-   
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 {% endblock %}
+
 </body>
 </html>

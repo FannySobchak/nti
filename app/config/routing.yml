@@ -26,6 +26,10 @@ _gestionFichier:
     path: /gestionFichier
     defaults: { _controller: SilntiBundle:GestionFichier:gestionFichier }
 
+_gestionPage:
+    path: /gestionPage
+    defaults: { _controller: SilntiBundle:GestionPage:gestionPage }
+
 #app:
 #    resource: "@AppBundle/Controller/"
 #    type:     annotation
